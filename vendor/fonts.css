@@ -1,0 +1,10 @@
+/*
+EXAMPLE FONT STRUCTURE
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(LINK TO FILE) format("woff2");
+}
+  */
