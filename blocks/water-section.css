@@ -1,0 +1,53 @@
+.water__overlay {
+  background-color: black;
+  height: 100%;
+  width: 70%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.4;
+  z-index: 1;
+}
+.section_water {
+  background-image: url(../images/water.jpg);
+  background-size: 100%;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.water__content {
+  max-width: 721px;
+  padding: 20px;
+  margin: 0 166px 0 auto;
+  z-index: 2;
+}
+
+.water__heading {
+  font-family: "Sarala", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 33px;
+}
+
+.water__subheading {
+  font-family: "Sarala", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.water__description {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 21px;
+}
+
+.form__water {
+  margin: 95px 0 0;
+}

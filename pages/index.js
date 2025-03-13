@@ -1,3 +1,4 @@
+//CALEBS SECTION BELOW
 const counter = document.querySelector(".header__countdown-timer");
 var countDownDate = new Date("Mar 22, 2025 20:30:00").getTime();
 
@@ -32,3 +33,54 @@ var x = setInterval(function () {
     counter.innerHTML = "Earth Hour for 2025 has passed!";
   }
 }, 1000);
+
+const waterForm = document.forms["water"];
+const waterFormFeedback = waterForm.querySelector(".form__submission-feedback");
+const waterInput = waterForm.querySelector(".form__text-input");
+const handleWaterFormSubmit = (e) => {
+  e.preventDefault();
+  const showerMins = waterInput.value;
+  if (showerMins >= 99) {
+    waterFormFeedback.innerHTML =
+      "You wasted 210 gallons of water, which could wash 15 elephants!";
+  } else if (showerMins >= 90) {
+    waterFormFeedback.innerHTML =
+      "You wasted 189 gallons of water, enough to brew 3,024 cups of tea.";
+  } else if (showerMins >= 80) {
+    waterFormFeedback.innerHTML =
+      "You wasted 168 gallons of water, which could water a garden for 5 hours.";
+  } else if (showerMins >= 70) {
+    waterFormFeedback.innerHTML =
+      "You wasted 147 gallons of water, enough to cook 588 cups of rice.";
+  } else if (showerMins >= 60) {
+    waterFormFeedback.innerHTML =
+      "You wasted 126 gallons of water, enough to fill an entire kiddie pool.";
+  } else if (showerMins >= 50) {
+    waterFormFeedback.innerHTML =
+      "You wasted 105 gallons of water, enough to wash 5 cars.";
+  } else if (showerMins >= 40) {
+    waterFormFeedback.innerHTML =
+      "You wasted 84 gallons of water, which could flush a toilet 168 times.";
+  } else if (showerMins >= 30) {
+    waterFormFeedback.innerHTML =
+      "You wasted 63 gallons of water, enough to fill a medium-sized bathtub.";
+  } else if (showerMins >= 20) {
+    waterFormFeedback.innerHTML =
+      "You wasted 42 gallons of water, which could brew 672 cups of coffee.";
+  } else if (showerMins >= 10) {
+    waterFormFeedback.innerHTML =
+      " You wasted 21 gallons of water, which is enough to fill a small fish tank.";
+  } else if (showerMins < 10) {
+    waterFormFeedback.innerHTML =
+      "GOOD JOB! Less than 10 minutes is a good habit to save water.";
+  }
+  waterForm.reset();
+};
+
+waterForm.addEventListener("submit", handleWaterFormSubmit);
+
+//PUJAS SECTION BELOW
+
+//CHAIMS SECTION BELOW
+
+//ALEXS SECTION BELOW
