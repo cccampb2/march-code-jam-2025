@@ -10,11 +10,50 @@
   <body>
     <div class="page">
       <div class="page__content">
-        <header class="header"></header>
-        <main></main>
+        <!-- Header assigned to: Caleb -->
+        <header class="header">
+          <nav class="header__nav">
+            <li class="header__navlinks">
+              <a href="#" class="header__navlink">About</a>
+            </li>
+            <li class="header__navlinks">
+              <a href="#" class="header__navlink">Learn The Facts</a>
+            </li>
+            <li class="header__navlinks">
+              <a href="#" class="header__navlink">Contact Us</a>
+            </li>
+          </nav>
+          <div class="header__countdown">
+            Earth Hour is in: <span class="header__countdown-timer"></span>
+          </div>
+        </header>
+
+        <main>
+          <!-- Hero Section assigned to: Caleb -->
+          <section class="section section_hero">
+            <model-viewer
+              class="section_hero__model-viewer"
+              src="./images/earth.glb"
+              auto-rotate
+              rotation-per-second="25deg"
+            ></model-viewer>
+            <h1 class="section_hero__title">
+              LET'S <span class="section_hero__accent">SAVE</span> THE EARTH
+            </h1>
+          </section>
+
+          <!-- About Section assigned to: Puja -->
+          <section class="section section_about"></section>
+          <!-- Forms within sections assigned to: Alex -->
+          <!-- Content within sections assigned to: Alex -->
+        </main>
         <footer></footer>
       </div>
     </div>
     <script src="./pages/index.js" type="module"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
   </body>
 </html>
