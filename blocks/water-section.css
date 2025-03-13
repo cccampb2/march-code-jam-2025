@@ -1,20 +1,23 @@
 .water__overlay {
   background-color: black;
-  height: 100%;
+
   width: 70%;
   position: absolute;
   top: 0;
   right: 0;
+  bottom: 0;
+
   opacity: 0.4;
   z-index: 1;
 }
 .section_water {
   background-image: url(../images/water.jpg);
-  background-size: 100%;
+  background-size: cover;
   color: var(--text);
   display: flex;
   align-items: center;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .water__content {
@@ -50,4 +53,41 @@
 
 .form__water {
   margin: 95px 0 0;
+}
+
+@media (max-width: 1270px) {
+  .water__overlay {
+    width: 100%;
+  }
+  .water__content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .water__heading {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+
+  .water__subheading {
+    font-family: "Sarala", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+  }
+
+  .water__description {
+    font-family: "Sarala", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 0 10px;
+  }
 }
