@@ -40,6 +40,7 @@ const waterInput = waterForm.querySelector(".form__text-input");
 const handleWaterFormSubmit = (e) => {
   e.preventDefault();
   const showerMins = waterInput.value;
+  waterFormFeedback.classList.add("form__submission-feedback_visible");
   if (showerMins >= 99) {
     waterFormFeedback.innerHTML =
       "You wasted 210 gallons of water, which could wash 15 elephants!";

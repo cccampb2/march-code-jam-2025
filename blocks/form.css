@@ -52,8 +52,12 @@
 }
 
 .form__submission-feedback {
-  display: block;
   background-color: var(--text);
   padding: 5px 10px;
   border-radius: 24px;
+  display: none;
+}
+
+.form__submission-feedback_visible {
+  display: block;
 }
