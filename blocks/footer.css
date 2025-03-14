@@ -1,0 +1,45 @@
+.footer {
+  max-width: 100%;
+  height: 25dvh;
+  color: var(--text);
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer__title {
+  font-family: "Sarala", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 33px;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__contact-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.footer__github,
+.footer__email {
+  width: 25px;
+  aspect-ratio: 1/1;
+}
+
+.footer__username {
+}
+
+.footer__accent {
+  color: var(--button-hover);
+}
