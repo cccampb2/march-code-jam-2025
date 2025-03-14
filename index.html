@@ -14,10 +14,17 @@
         <header class="header">
           <nav class="header__nav">
             <li class="header__navlinks">
+              <<<<<<< HEAD
+              <a href="#about" class="header__navlink">About</a>
+              =======
+              <a href="#home" class="header__navlink">Home</a>
+              >>>>>>> 29e09ad2b763cee4a82fd88358b809338d768c16
+            </li>
+            <li class="header__navlinks">
               <a href="#about" class="header__navlink">About</a>
             </li>
             <li class="header__navlinks">
-              <a href="#" class="header__navlink">Learn The Facts</a>
+              <a href="#facts" class="header__navlink">Learn The Facts</a>
             </li>
             <li class="header__navlinks">
               <a href="#" class="header__navlink">Contact Us</a>
@@ -30,7 +37,7 @@
 
         <main>
           <!-- Hero Section assigned to: Caleb -->
-          <section class="section section_hero">
+          <section id="home" class="section section_hero">
             <model-viewer
               class="section_hero__model-viewer"
               src="./images/earth.glb"
@@ -43,6 +50,7 @@
           </section>
 
           <!-- About Section assigned to: Puja -->
+          <<<<<<< HEAD
           <section id="about" class="section section_about">
             <div class="about__content">
               <img
@@ -117,8 +125,62 @@
               </div>
             </section>
           </section>
+          =======
+          <section class="section section_about"></section>
+          >>>>>>> 29e09ad2b763cee4a82fd88358b809338d768c16
           <!-- Forms within sections assigned to: Alex -->
-          <!-- Content within sections assigned to: Alex -->
+          <!-- Water section assigned to: Caleb -->
+          <section id="facts" class="section section_water">
+            <div class="water__overlay"></div>
+            <div class="water__content">
+              <h2 class="water__heading">Water Waste: Facts/Impacts</h2>
+              <h3 class="water__subheading">Trillions of Gallons Wasted</h3>
+              <p class="water__description">
+                The U.S. alone wastes about 1 trillion gallons of water annually
+                due to leaks, inefficient use, and wasteful habits.
+              </p>
+              <h3 class="water__subheading">Shower Power… or Water Devour?</h3>
+              <p class="water__description">
+                Did you know that a 30-minute shower can waste 63 gallons of
+                water—more than what some families in developing countries use
+                in an entire week?
+              </p>
+              <h3 class="water__subheading">Climate Change & Water Scarcity</h3>
+              <p class="water__description">
+                Rising temperatures increase evaporation and droughts, making
+                fresh water even more precious. By 2025, half of the world’s
+                population may live in water-stressed areas.
+              </p>
+              <form id="water" class="form form_water">
+                <h3 class="form__heading">How to Reduce Water Waste</h3>
+                <p class="form__solution">
+                  Fix leaks – A dripping faucet can waste 3,000 gallons per
+                  year! Turn off the tap while brushing teeth – Saves up to 8
+                  gallons per day. Use water-efficient appliances – Look for EPA
+                  WaterSense labels.
+                </p>
+                <p class="form__solution">
+                  Also, with growing water shortages around the world,
+                  shortening your shower by just 5 minutes can save over 3,800
+                  gallons of water per year, helping to preserve this vital
+                  resource for future generations.
+                </p>
+                <h3 class="form__question">
+                  How long do your showers typically last?
+                </h3>
+                <input
+                  type="number"
+                  min="5"
+                  max="99"
+                  required
+                  class="form__text-input"
+                />
+                <button type="submit" class="form__submit-btn">&rarr;</button>
+                <span class="form__submission-feedback"></span>
+              </form>
+            </div>
+          </section>
+          <!-- Content within sections assigned to: Chaim -->
         </main>
         <footer></footer>
       </div>

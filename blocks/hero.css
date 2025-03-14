@@ -32,3 +32,25 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .section_hero {
+    text-align: center;
+  }
+  .section_hero__model-viewer {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section_hero__model-viewer {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section_hero__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
