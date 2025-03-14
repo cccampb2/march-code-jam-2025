@@ -1,3 +1,8 @@
+.section_about {
+  background-image: url("../images/noah-buscher-x8ZStukS2PM-unsplash.jpg");
+  background-size: 100% 100%;
+}
+
 .container {
   max-width: 900px;
   margin: 30px auto;
@@ -21,6 +26,7 @@
 
 .info-box li {
   margin-bottom: 0.8rem;
+  color: var(--background);
 }
 
 .features {
@@ -48,17 +54,13 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
-}
-
-.about__image {
-  width: 30%;
-  height: auto;
+  padding: 100px 2rem 2rem;
 }
 
 .about__text {
   flex-grow: 1;
   text-align: center;
+  color: white;
 }
 
 .about__text h2 {
