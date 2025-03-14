@@ -1,4 +1,4 @@
-# March Code Jam 2025 12344
+# March Code Jam 2025
 
 Welcome to TEAM NAME **March Code Jam 2025** project! This project showcases TEAM NAME work during the March Code Jam, where we focused on creating a frontend web application with interactive elements and a modern dark theme UI.
 
@@ -22,4 +22,4 @@ Welcome to TEAM NAME **March Code Jam 2025** project! This project showcases TEA
    git clone https://github.com/cccampb2/march-code-jam-2025.git
 2. Use VSCode extention: Live Server.
 
-## Deployed on Github Pages: [Visit Here](https://cccampb2.github.io/march-code-jam-2025/)
+## Deployed on Github Pages: [Visit The Site](https://cccampb2.github.io/march-code-jam-2025/)
