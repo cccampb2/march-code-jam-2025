@@ -7,13 +7,23 @@
     <link rel="stylesheet" href="./pages/index.css" />
     <link
       rel="preload"
-      href="earth.glb"
+      href="./images/earth.glb"
       as="fetch"
       type="model/gltf-binary"
       crossorigin="anonymous"
     />
-    <link rel="preload" href="js/model-viewer.min.js" as="script" />
-    <script type="module" src="js/model-viewer.min.js" defer></script>
+    <link
+      rel="preload"
+      href="./utils/model-viewer.min.js"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <script
+      type="module"
+      src="./utils/model-viewer.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
 
   <body>
@@ -283,6 +293,5 @@
       </div>
     </div>
     <script src="./pages/index.js" type="module"></script>
-    <script type="module" src="./utils/model-viewer.min.js"></script>
   </body>
 </html>
