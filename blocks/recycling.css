@@ -1,0 +1,64 @@
+.section__recycling {
+  background-image: url(../images/glass.jpg);
+  background-size: cover;
+  color: var(--text);
+  position: relative;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.recycling__container {
+  margin-top: 200px;
+  width: 80%;
+  height: 60%;
+  background: linear-gradient(#1cb60e, #adf08b, #b0d881);
+  border: 1px solid #000;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+}
+
+.recycling__heading {
+  font-family: "Sarala", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 30px;
+  color: #125b96;
+  text-align: center;
+}
+
+.recycling__description {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-wrap: pretty;
+  color: #125b96;
+  margin: 0 0 30px;
+  padding: 10px;
+}
+
+@media (max-width: 1100px) {
+  .recycling__heading {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  .recycling__description {
+    margin: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recycling__description {
+    font-family: "Sarala", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    margin: 0 0 10px;
+  }
+}
