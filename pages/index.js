@@ -113,10 +113,7 @@ const switchImage = document.getElementById("lightSwitch");
 const electricitySection = document.querySelector(".section_electricity");
 const onImage = "./images/light-switch-on.png";
 const offImage = "./images/light-switch-off.png";
-const overlay = document.createElement("div");
-
-overlay.classList.add("electricity__overlay");
-electricitySection.appendChild(overlay);
+const overlay = electricitySection.querySelector(".electricity__overlay");
 
 let lightsOff = false;
 
