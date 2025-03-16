@@ -85,3 +85,22 @@ waterForm.addEventListener("submit", handleWaterFormSubmit);
 //CHAIMS SECTION BELOW
 
 //ALEXS SECTION BELOW
+const switchImage = document.getElementById("lightSwitch");
+const electricitySection = document.querySelector(".section_electricity");
+const onImage = "./images/light-switch-on.png";
+const offImage = "./images/light-switch-off.png";
+const overlay = document.createElement("div");
+
+overlay.classList.add("electricity__overlay");
+electricitySection.appendChild(overlay);
+
+let lightsOff = false;
+
+const toggleLights = () => {
+  lightsOff = !lightsOff;
+
+  switchImage.src = lightsOff ? offImage : onImage;
+  overlay.style.display = lightsOff ? "block" : "none";
+};
+
+switchImage.addEventListener("click", toggleLights);
