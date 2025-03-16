@@ -113,7 +113,7 @@ const switchImage = document.getElementById("lightSwitch");
 const electricitySection = document.querySelector(".section_electricity");
 const onImage = "./images/light-switch-on.png";
 const offImage = "./images/light-switch-off.png";
-const overlay = electricitySection.querySelector(".electricity__overlay");
+const overlay = document.querySelectorAll(".section__overlay");
 
 let lightsOff = false;
 
@@ -121,7 +121,9 @@ const toggleLights = () => {
   lightsOff = !lightsOff;
 
   switchImage.src = lightsOff ? offImage : onImage;
-  overlay.style.display = lightsOff ? "block" : "none";
+  overlay.forEach((ovl) => {
+    ovl.style.display = lightsOff ? "block" : "none";
+  });
 };
 
 switchImage.addEventListener("click", toggleLights);
