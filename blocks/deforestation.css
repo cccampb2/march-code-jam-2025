@@ -1,0 +1,94 @@
+.deforestation__overlay {
+  background-color: black;
+
+  width: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.section_deforestation {
+  background-image: url(../images/forest.jpg);
+  background-size: cover;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.deforestation__content {
+  max-width: 721px;
+  padding: 20px;
+  margin: 0 auto 0 166px;
+  z-index: 2;
+}
+
+.deforestation__heading {
+  font-family: "Sarala", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 33px;
+}
+
+.deforestation__subheading {
+  font-family: "Sarala", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.deforestation__description {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 21px;
+}
+
+.form__deforestation {
+  margin: 95px 0 0;
+}
+
+@media (max-width: 1270px) {
+  .deforestation__overlay {
+    width: 100%;
+  }
+  .deforestation__content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .deforestation__heading {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+
+  .deforestation__subheading {
+    font-family: "Sarala", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+  }
+
+  .deforestation__description {
+    font-family: "Sarala", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 0 10px;
+  }
+}

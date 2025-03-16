@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Save The Planet</title>
     <link rel="stylesheet" href="./pages/index.css" />
+    <link
+      rel="preload"
+      href="./images/earth.glb"
+      as="fetch"
+      type="model/gltf-binary"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./utils/model-viewer.min.js"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <script
+      type="module"
+      src="./utils/model-viewer.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
 
   <body>
@@ -86,7 +105,7 @@
                 </p>
               </div>
             </div>
-            <section class="container">
+            <div class="container">
               <h2>What You will Find Here</h2>
               <div class="features">
                 <div class="card">
@@ -107,14 +126,13 @@
                   <p>Test and expand your knowledge on energy conservation.</p>
                 </div>
               </div>
-            </section>
+            </div>
           </section>
-          <!-- Forms within sections assigned to: Alex -->
           <!-- Water section assigned to: Caleb -->
           <section id="facts" class="section section_water">
             <div class="water__overlay"></div>
             <div class="water__content">
-              <h2 class="water__heading">Water Waste: Facts/Impacts</h2>
+              <h2 class="water__heading">Water Waste: Facts & Impacts</h2>
               <h3 class="water__subheading">Trillions of Gallons Wasted</h3>
               <p class="water__description">
                 The U.S. alone wastes about 1 trillion gallons of water annually
@@ -202,14 +220,119 @@
             </div>
           </section>
           <!-- Content within sections assigned to: Chaim -->
+
+          <!-- Deforestation section assigned to: Caleb -->
+
+          <section id="facts" class="section section_deforestation">
+            <div class="deforestation__overlay"></div>
+            <div class="deforestation__content">
+              <h2 class="deforestation__heading">
+                Deforestation: Facts & Impacts
+              </h2>
+              <h3 class="deforestation__subheading">Vanishing Forests</h3>
+              <p class="deforestation__description">
+                The world loses around 24.7 million acres of forest every
+                year—an area roughly the size of Iceland—due to agriculture,
+                logging, and urban expansion.
+              </p>
+              <h3 class="deforestation__subheading">More Than Just Trees</h3>
+              <p class="deforestation__description">
+                Forests absorb about 30% of global CO₂ emissions, but
+                deforestation releases stored carbon, accelerating climate
+                change. The Amazon rainforest alone emits more CO₂ than it
+                absorbs due to deforestation.
+              </p>
+              <h3 class="deforestation__subheading">Wildlife at Risk</h3>
+              <p class="deforestation__description">
+                Around 80% of Earth’s land animals and plants live in forests.
+                Deforestation destroys their habitats, pushing species like
+                orangutans, tigers, and jaguars toward extinction.
+              </p>
+              <form id="deforestation" class="form form_deforestation">
+                <h3 class="form__heading">How to Reduce Deforestation</h3>
+                <p class="form__solution">
+                  Go Paperless – Opt for digital documents and online billing to
+                  reduce paper demand. Every ton of recycled paper saves 17
+                  trees!
+                </p>
+                <p class="form__solution">
+                  Choose Sustainable Products – Look for FSC-certified wood and
+                  paper products, which come from responsibly managed forests.
+                </p>
+                <h3 class="form__question">
+                  How often do you use paper products like napkins, notebooks,
+                  or receipts? Choose an option below to see how your habit
+                  impacts forests!”
+                </h3>
+                <select
+                  type="option"
+                  required
+                  class="form__text-input form__text-input_defor"
+                >
+                  <option value="">--Please choose an option--</option>
+                  <option value="rarely">Rarely</option>
+                  <option value="sometimes">Sometimes</option>
+                  <option value="often">Often</option>
+                </select>
+                <button type="submit" class="form__submit-btn">&rarr;</button>
+                <span class="form__submission-feedback"></span>
+              </form>
+            </div>
+          </section>
+
+          <!-- Recycling section assigned to: Chaim -->
+          <section id="recycle" class="section section_recycle"></section>
         </main>
-        <footer></footer>
+        <footer id="contact" class="footer">
+          <h2 class="footer__title">GET IN TOUCH</h2>
+          <div class="footer__content">
+            <div class="footer__contacts">
+              <div class="footer__contact-title">
+                <img
+                  class="footer__github"
+                  src="./images/github-mark-white.svg"
+                  alt=""
+                />
+              </div>
+              <div class="footer_contact">
+                Caleb Campbell : <span class="footer__accent">Ccampb2</span>
+              </div>
+              <div class="footer_contact">
+                Chaim Wuensch : <span class="footer__accent">Chaimwuensch</span>
+              </div>
+              <div class="footer_contact">
+                Puja Gupta :
+                <span class="footer__accent">Puja-Gupta-coder</span>
+              </div>
+              <div class="footer_contact">
+                Alex Reznik : <span class="footer__accent">Rezelution</span>
+              </div>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__contact-title">
+                <img class="footer__email" src="./images/email.svg" alt="" />
+              </div>
+              <div class="footer_contact">
+                Caleb Campbell :
+                <span class="footer__accent">Calebccampbell19@gmail.com</span>
+              </div>
+              <div class="footer_contact">
+                Chaim Wuensch :
+                <span class="footer__accent">Chaimwuensch@gmail.com</span>
+              </div>
+              <div class="footer_contact">
+                Puja Gupta :
+                <span class="footer__accent">Puja.nathani123@gmail.com</span>
+              </div>
+              <div class="footer_contact">
+                Alex Reznik :
+                <span class="footer__accent">Alex_reznik@verizon.net</span>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
     <script src="./pages/index.js" type="module"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
   </body>
 </html>

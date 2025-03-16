@@ -39,6 +39,7 @@ body,
 .section {
   max-width: 1440px;
   width: 100dvw;
-  height: 100dvh;
+  min-height: 100dvh;
   position: relative;
+  padding: 0 20pxgit;
 }
