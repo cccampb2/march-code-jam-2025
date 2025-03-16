@@ -78,7 +78,31 @@ const handleWaterFormSubmit = (e) => {
   waterForm.reset();
 };
 
+const deforestationForm = document.forms["deforestation"];
+const deforestationFormFeedback = deforestationForm.querySelector(
+  ".form__submission-feedback"
+);
+const deforestationInput = deforestationForm.querySelector(".form__text-input");
+const handleDeforestationFormSubmit = (e) => {
+  e.preventDefault();
+  deforestationFormFeedback.classList.add("form__submission-feedback_visible");
+
+  const value = deforestationInput.value;
+  if (value === "rarely") {
+    deforestationFormFeedback.innerHTML =
+      "Great job! If everyone used as little paper as you, we could save millions of trees each year.";
+  } else if (value === "sometimes") {
+    deforestationFormFeedback.innerHTML =
+      "Not bad! Did you know that recycling just one ton of paper can save 17 trees and 7,000 gallons of water?";
+  } else if (value === "often") {
+    deforestationFormFeedback.innerHTML =
+      "Consider going digital! The U.S. alone uses about 68 million trees’ worth of paper products each year.";
+  }
+  deforestationForm.reset();
+};
+
 waterForm.addEventListener("submit", handleWaterFormSubmit);
+deforestationForm.addEventListener("submit", handleDeforestationFormSubmit);
 
 //PUJAS SECTION BELOW
 
