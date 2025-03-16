@@ -101,8 +101,27 @@ const handleDeforestationFormSubmit = (e) => {
   deforestationForm.reset();
 };
 
+const earthLogo = document.querySelector(".section_hero__logo");
+const earthTitle = document.querySelector(".section_hero__title-container");
+
+const handleHeroTitleClick = (e) => {
+  earthLogo.style.display = "block";
+  earthLogo.classList.add("section_hero_animation_enter");
+  earthTitle.style.display = "none";
+  earthTitle.classList.remove("section_hero_animation_enter");
+};
+
+const handleHeroLogoClick = (e) => {
+  earthTitle.style.display = "block";
+  earthTitle.classList.add("section_hero_animation_enter");
+  earthLogo.style.display = "none";
+  earthLogo.classList.remove("section_hero_animation_enter");
+};
+
 waterForm.addEventListener("submit", handleWaterFormSubmit);
 deforestationForm.addEventListener("submit", handleDeforestationFormSubmit);
+earthTitle.addEventListener("click", handleHeroTitleClick);
+earthLogo.addEventListener("click", handleHeroLogoClick);
 
 //PUJAS SECTION BELOW
 
