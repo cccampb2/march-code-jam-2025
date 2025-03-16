@@ -19,7 +19,7 @@
   justify-content: space-between;
   z-index: 1000;
   max-width: 1440px;
-  mix-blend-mode: lighten;
+  mix-blend-mode: difference;
 }
 
 .header__nav {
