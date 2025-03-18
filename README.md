@@ -1,6 +1,6 @@
 # March Code Jam 2025
 
-Welcome to TEAM NAME **March Code Jam 2025** project! This project showcases TEAM NAME work during the March Code Jam, where we focused on creating a frontend web application with interactive elements and a modern dark theme UI.
+Welcome to UX Green's **March Code Jam 2025** project! This project showcases UX Green's work during the March Code Jam, where we focused on creating a frontend web application with interactive elements and a modern dark theme UI.
 
 ## Features
 
